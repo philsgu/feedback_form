@@ -65,7 +65,7 @@ else:
                 'I would like the program coordinator to contact me (Non-anonymous submissions only)',
                 'I would like the Director of GME (DGME) to contact me (Non-anonymous submissions only)'))
 
-print(name)
+#print(name)
 # file path input
 input_pdf_path = 'pdf_feedback_form.pdf'
 
@@ -80,8 +80,7 @@ get_field['position_field'] = position
 get_field['describe_field'] = description
 get_field['disposition_field'] = disposition
 
-print(get_field)
-
+#print(get_field)
 #fill the PDF form and save output to memory
 output_pdf_data = BytesIO()
 fillpdfs.write_fillable_pdf(input_pdf_path, output_pdf_data, get_field, flatten=True)
